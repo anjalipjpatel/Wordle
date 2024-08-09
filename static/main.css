@@ -1,7 +1,66 @@
 body, html {
-    margin: 10;
-    padding: 2;
+    margin: 0;
+    padding: 2px;
     height: 100%;
     font-family: 'Poppins',sans-serif;
     background-color: bisque;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.centered-outline {
+    text-align: center;
+    outline: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size:600%;
+    margin: 1%;
+}
+
+.grid-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+}
+
+.grey-square{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border: 2px solid black;
+}
+
+.alphabet{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grey-square-small{
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
