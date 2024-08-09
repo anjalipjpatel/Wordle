@@ -7,77 +7,94 @@
 
     </head>
     <body>
+        <script>
+            // to create enter button for the textbox
+            document.addEventListener("DOMContentLoaded", function() {
+                const textInput = document.getElementById("textInput");
+                const enterButtton = document.getElementById("enter");
+
+                enterButtton.addEventListener("click", function() {
+                    const value = textInput.value;
+                    console.log(value);
+                    textInput.value = "";
+                });
+            });
+        </script>
+        
         <h1 class="centred-outline">WORDLE</h1>
 
         <div class="grid-wrapper">
             <div class="grid">
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
 
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
 
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
 
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
 
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
 
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
-                <div class="grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
+                <div class="no-select grey-square"></div>
             </div>
         </div>
 
         <div class="alphabet">
-            <div class="grey-square-small">A</div>
-            <div class="grey-square-small">B</div>
-            <div class="grey-square-small">C</div>
-            <div class="grey-square-small">D</div>
-            <div class="grey-square-small">E</div>
-            <div class="grey-square-small">F</div>
-            <div class="grey-square-small">G</div>
-            <div class="grey-square-small">H</div>
-            <div class="grey-square-small">I</div>
-            <div class="grey-square-small">J</div>
-            <div class="grey-square-small">K</div>
-            <div class="grey-square-small">L</div>
-            <div class="grey-square-small">M</div>
-            <div class="grey-square-small">N</div>
-            <div class="grey-square-small">O</div>
-            <div class="grey-square-small">P</div>
-            <div class="grey-square-small">Q</div>
-            <div class="grey-square-small">R</div>
-            <div class="grey-square-small">S</div>
-            <div class="grey-square-small">T</div>
-            <div class="grey-square-small">U</div>
-            <div class="grey-square-small">V</div>
-            <div class="grey-square-small">W</div>
-            <div class="grey-square-small">X</div>
-            <div class="grey-square-small">Y</div>
-            <div class="grey-square-small">Z</div>
+            <div class="no-select grey-square-small" id="a">A</div>
+            <div class="no-select grey-square-small" id="b">B</div>
+            <div class="no-select grey-square-small" id="c">C</div>
+            <div class="no-select grey-square-small" id="d">D</div>
+            <div class="no-select grey-square-small" id="e">E</div>
+            <div class="no-select grey-square-small" id="f">F</div>
+            <div class="no-select grey-square-small" id="g">G</div>
+            <div class="no-select grey-square-small" id="h">H</div>
+            <div class="no-select grey-square-small" id="i">I</div>
+            <div class="no-select grey-square-small" id="j">J</div>
+            <div class="no-select grey-square-small" id="k">K</div>
+            <div class="no-select grey-square-small" id="l">L</div>
+            <div class="no-select grey-square-small" id="m">M</div>
+            <div class="no-select grey-square-small" id="n">N</div>
+            <div class="no-select grey-square-small" id="o">O</div>
+            <div class="no-select grey-square-small" id="p">P</div>
+            <div class="no-select grey-square-small" id="q">Q</div>
+            <div class="no-select grey-square-small" id="r">R</div>
+            <div class="no-select grey-square-small" id="s">S</div>
+            <div class="no-select grey-square-small" id="t">T</div>
+            <div class="no-select grey-square-small" id="u">U</div>
+            <div class="no-select grey-square-small" id="v">V</div>
+            <div class="no-select grey-square-small" id="w">W</div>
+            <div class="no-select grey-square-small" id="x">X</div>
+            <div class="no-select grey-square-small" id="y">Y</div>
+            <div class="no-select grey-square-small" id="z">Z</div>
+        </div>
 
-
+        <div class="user-input">
+            <input class="input-box" no-select type="text" placeholder="Enter Guess" id="textInput">
+            <input type="button" value="✓" id="enter">
         </div>
 
     </body>

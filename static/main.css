@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size:600%;
+    font-size:400%;
     margin: 1%;
 }
 
@@ -43,7 +43,7 @@ h1 {
 .grey-square{
     width: 100px;
     height: 100px;
-    background-color: grey;
+    background-color: lightgray;
     border: 2px solid black;
 }
 
@@ -63,4 +63,38 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+.no-select{
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    cursor: default;
+}
+
+.user-input{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.input-box{
+    margin-top: 1%;
+    flex: 1;
+    padding: 1%;
+    font-size: 32px;
+    box-sizing: border-box;
+}
+
+#enter{
+    padding: 1% 2%;
+    font-size: 32px;
+    cursor: pointer;
+    border: none;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 4px;
 }
